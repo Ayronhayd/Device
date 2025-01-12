@@ -17,16 +17,13 @@ mixin header(headerMods, currentUrl)
 
   header.header(class=headerMods)
     .container
-      if(currentUrl === "index.html")
-        .header__logo
-          +icon("logo", 30, 30)
-          span  Игорь Щербаков
-
+      if(currentUrl === "")
+        .header__logo.logo
+          +icon("logo-header", 145, 36)
 
       else
-        a.header__logo(href="#")
-          +icon("logo", 30, 30)
-          span  Игорь Щербаков
+        a.header__logo.logo(href="#")
+          +icon("logo-header", 145, 36)
 
       nav.main-nav
         .main-nav__wrapper

@@ -1,0 +1,5 @@
+.header__logo {
+  @include hover {
+    opacity: 0.6;
+  }
+ }
